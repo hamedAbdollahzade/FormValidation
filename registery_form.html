@@ -24,7 +24,7 @@
                     <span class="alert-red" style="display: none;">* طول رشته رمز عبور نباید کمتر از 8 کارکتر باشد *</span>
 
                     <label class="margin" for="pass_input2">تکرار رمز عبور :</label>
-                    <input class="margin" type="password" id="pass_input2" required>
+                    <input class="margin" type="password" id="pass_input2" required onchange="validatRepeatPass(event)">
                     <span class="alert-red" style="display: none;">* مقدار تکرار رمز عبور تطابق ندارد *</span>
         <!-- تگ باتن استفاده کردم چون مخصوص دکمه است و بیشتر باهاش حال میکنم :D            -->
                     <br>
