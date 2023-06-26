@@ -90,7 +90,6 @@ body {
 }
 
 .alert-red {
-    display: none;
     padding-top: 10px;
     font-size: 13px;
     color: red;
