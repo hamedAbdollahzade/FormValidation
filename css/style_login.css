@@ -67,7 +67,7 @@ body {
     margin-top: 20px;
 }
 .btn_green {
-    
+    /* اینجا کلاس دکمه سبز درست کردم برای باتن هایی ک میخوام تو برنامم ازش استفاددده کنم  */
     background-color: rgb(13, 199, 13);
     color: rgb(255, 255, 255);
     border-radius: 25px;
@@ -82,12 +82,13 @@ body {
     text-decoration: none;
     color: rgb(44, 44, 216);
 }
-
+/* اینجا گفتم اونی ک کلاس هدر داره  رو بیا رنگشو سبز کن و سایزشو تنظیم کردم  */
 .header {
     color:rgb(42, 231, 42);
     font-size: 40px;
     
 }
+/* کلاس الرت قرمز درست کردم برای استایل دهی به پیام های خطای برنامم  */
 .alert-red {
     padding-top: 10px;
     font-size: 13px;

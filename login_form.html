@@ -16,14 +16,15 @@
             <!-- از کلاس هدر و مارجین استفاده کردم برای هرجایی ک لازم داشتم استفاده کنم -->
 <!-- از تگ لیبل برای برچسب های فیلد هام استفاده کردم و با فور به اینپوتم وصلش کردم ک روی برچسب کلیک میشه وارد اینپوت مربوطه بشه -->
                     <label class="margin" for="phone_input">موبایل : </label>
-                    <input class="margin" type="tel" id="phone_input" placeholder="* * * * * * * * * 9 0" autofocus required onchange="validatPhone(event)">
+                    <!-- اینجا اتوفوکوس گذاشتم ک وقتی صفحه بارگذاری میشه اتوماتیک بره تو این فیلد فوکوس بشه و ایونتی ک گذاشتم برای اینکه موقعی ک کلیدی از کیبورد فشرده میشه بیاد بررسی کنه درست وارد شده یا خیر  -->
+                    <input class="margin" type="tel" id="phone_input" placeholder="* * * * * * * * * 9 0" autofocus onkeyup="validatPhone(event)">
                     <span class="alert-red" style="display: none;">* شماره تماس را به صورت صحیح وارد کنید *</span>
                  
                     <label class="margin" for="pass_input">رمز عبور : </label>
-                    <input class="margin" type="password" id="pass_input" placeholder="* * * * * * * * * * *" required>
+                    <input class="margin" type="password" id="pass_input" placeholder="* * * * * * * * * * *" >
                      <br>
                      <!-- تگ باتن استفاده کردم چون مخصوص دکمه است و بیشتر باهاش حال میکنم :D            -->
-                    <button class="margin btn_green" >ورود</button>
+                    <button class="margin btn_green" disabled >ورود</button>
                     <br>
                     <!-- از تگ معنا دار لینک استفاده کردم برای اینکه ادرس صفحه ریجستری رو بهش بدم و استایل های پیش فرضش مناسب بود  -->
                     <a class="margin" href="./registery_form.html">ثبت نام</a>
