@@ -35,7 +35,7 @@
     function validatPassReg1(event) {
         // ی تابع نوشتم برای اعتبار سنجی پسورد ک چک کنه ببینه هشت  رقم وارد شده باشه 
             let pass = event.target.value ;
-            if (pass.length == 8){
+            if (pass.length >= 8){
                 document.querySelectorAll('span')[1].style.display = 'none' ;
                 document.querySelectorAll('form input')[1].style.border = '';
             }
