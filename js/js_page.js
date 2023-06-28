@@ -1,3 +1,9 @@
+// این متغییر ها رو برای صحت اطلاعات کاربر درست کردم و گفتم پیش فرض اشتباه باشه مگه خلافش ثابت بشه 
+// debugger
+var v1 = false ;
+var v2 = false ;
+var v3 = false ; 
+
 //! ------------------ add controler filde mobile ------------------------------------
     function validatPhone(event) { 
         // این تابع رو برای بررسی صحت شماره تلفن های صفحه لاگین و ریجستری نوشتم     
@@ -12,12 +18,14 @@
                             {
                                 document.querySelectorAll('span')[0].style.display = 'none';
                                 document.querySelectorAll('form input')[0].style.border = '';
+                                v1 = true
                             }
                             else
                             {
                                 document.querySelectorAll('span')[0].style.display = '';
                                 document.querySelectorAll('form input')[0].style.border = '2px red solid';
                                 // اینجا بریک پوینت گذاشتم چون تو دیباگ کردن فهمیدم یازده بار شرط رو چک میکنه حتی اگه اشتباه باشه 
+                                v1=false;
                                 break;
                             }
                         }      
@@ -38,6 +46,7 @@
             if (pass.length >= 8){
                 document.querySelectorAll('span')[1].style.display = 'none' ;
                 document.querySelectorAll('form input')[1].style.border = '';
+                v2 = true ;
             }
             else
             {
@@ -55,6 +64,7 @@
             if (p1 == p2) {
                 document.querySelectorAll('span')[2].style.display = 'none';
                 document.querySelectorAll('form input')[1].style.border = '';
+                v3 = true ;
             }
             else
             {
@@ -63,3 +73,26 @@
             }
         }
 //! ------------------- End controler filde Repeat Pass2 -------------------------------
+
+//? ------------Start-------- Add function Validation User Btn -----------------------------------------------
+function validationBtn() {
+    // debugger
+    document.querySelector('form button').disabled = true;
+    if (v1 && v2 && v3)
+    {
+        document.querySelector('form button').disabled = false;  
+    }
+}
+
+
+function validationBtnLogin()
+    {
+        debugger
+        document.querySelector('form button').disabled = true;
+    if (v1 && v2)
+    {
+        document.querySelector('form button').disabled = false;  
+    }
+
+    }
+//? -----------End--------- Validation User -----------------------------------------------
