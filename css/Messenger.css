@@ -1,4 +1,44 @@
-/* برای تست  */
 body {
-    background-color: yellowgreen;
+    background-image: url(../img/repeated-square.png);
+}
+
+.container {
+
+    display: grid;
+    width: 80%;
+    margin: 50px auto;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 1fr  4fr 1fr;
+    gap: 5px;
+}
+
+.contact{
+    background-color:#ffd32a ;
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+
+.sideBar{
+    background-color: #f53b57;
+    grid-column: 1/2;
+    grid-row: 1/-1;
+   
+}
+
+.chatPage{
+    background-color:#0be881;
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+
+.inputText{
+    background-color: #ffa801;
+    grid-column: 2/3;
+    grid-row: 3/4;
+}
+.customItem {
+    border-radius: 30px;
+    padding: 10px;
+    text-align: center;
+    
 }
