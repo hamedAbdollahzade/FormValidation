@@ -75,23 +75,82 @@ var v3 = false ;
 //! ------------------- End controler filde Repeat Pass2 -------------------------------
 
 //? ------------Start-------- Add function Validation User Btn -----------------------------------------------
-function validationBtn() {
+
+function validationBtnRegestery() {
     // debugger
     document.querySelector('form button').disabled = true;
     if (v1 && v2 && v3)
     {
-        document.querySelector('form button').disabled = false;  
+        document.querySelector('form button').disabled = false;
+        
+        debugger
+        farawin.testRegister(
+            (username = document.getElementById('phone_input').value ) ,
+            (password = document.getElementById('pass_input2').value ) ,
+            (name = "hamedAbdollahzade"),
+            (response) => {
+              //response is object like {code: string, message: string}
+              //if code is '200' mean success
+              //else mean error!
+              //Goodluck:)
+      
+              const success = response.code == "200";
+      
+              if (success) console.log("result from api -> ", response);
+              else console.error("error from api -> ", response);
+      
+              //you response to get message
+              //like
+              alert(response.message);
+      
+              //redirect if you want
+              // if(success)
+              //   window.location.assign('url...')
+            }
+          );
+        
+          
+          
     }
 }
 
 
+
+
+
+
 function validationBtnLogin()
     {
-        debugger
+        // debugger
         document.querySelector('form button').disabled = true;
     if (v1 && v2)
     {
-        document.querySelector('form button').disabled = false;  
+        document.querySelector('form button').disabled = false;
+        // debugger
+        farawin.testLogin(
+            (username = document.getElementById('phone_input').value ) ,
+            (password = document.getElementById('pass_input').value ) ,
+            (response) => {
+              //response is object like {code: string, message: string}
+              //if code is '200' mean success
+              //else mean error!
+              //Goodluck:)
+      
+              const success = response.code == "200";
+      
+              if (success) console.log("result from api -> ", response);
+              else console.error("error from api -> ", response);
+      
+              //you response to get message
+              //like
+              alert(response.message);
+      
+              //redirect if you want
+              // if(success)
+              //   window.location.assign('url...')
+            }
+          );
+
     }
 
     }
