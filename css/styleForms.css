@@ -3,7 +3,9 @@
     box-sizing: border-box;
 }
 
-body {
+body { 
+    /* ی فونت برای بادی انتخاب کردم ک بقیه ازش ارث ببرن و اگه سیستمی اون فونت رو نداشته باشه از پیش فرض های بعدی استفاده کنه   */
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;  
     /* از تصویر زمینه پترنی استفاده کردم برای زمینه */
     background-image: url(../img/repeated-square.png);
 }
@@ -67,14 +69,14 @@ body {
     margin-top: 20px;
 }
 .btn_green {
-    /* اینجا کلاس دکمه سبز درست کردم برای باتن هایی ک میخوام تو برنامم ازش استفاددده کنم  */
+    /* برای اومدن علامت دست رو دکمه  */
+    cursor:pointer;
     background-color: rgb(13, 199, 13);
     color: rgb(255, 255, 255);
     border-radius: 25px;
     font-size: 25px;
     padding: 8px;
     border: 1px rgb(38, 212, 14) solid;
-    
 }
 
 .form a {
@@ -82,13 +84,13 @@ body {
     text-decoration: none;
     color: rgb(44, 44, 216);
 }
-/* اینجا گفتم اونی ک کلاس هدر داره  رو بیا رنگشو سبز کن و سایزشو تنظیم کردم  */
+/* کلاس هدر درست کردم برای سایز و رنگ کاستوم  */
 .header {
     color:rgb(42, 231, 42);
     font-size: 40px;
     
 }
-/* کلاس الرت قرمز درست کردم برای استایل دهی به پیام های خطای برنامم  */
+/* کلاس الرت درست کردم برای رنگ پیغام های خطا برنامم  */
 .alert-red {
     padding-top: 10px;
     font-size: 13px;
