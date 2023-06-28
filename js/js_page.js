@@ -63,7 +63,7 @@ var v3 = false ;
             let p2 = document.getElementById('pass_input2').value ;
             if (p1 == p2) {
                 document.querySelectorAll('span')[2].style.display = 'none';
-                document.querySelectorAll('form input')[1].style.border = '';
+                document.querySelectorAll('form input')[2].style.border = '';
                 v3 = true ;
             }
             else
