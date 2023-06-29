@@ -5,9 +5,10 @@
 
 body { 
     /* ی فونت برای بادی انتخاب کردم ک بقیه ازش ارث ببرن و اگه سیستمی اون فونت رو نداشته باشه از پیش فرض های بعدی استفاده کنه   */
-  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;  
-    /* از تصویر زمینه پترنی استفاده کردم برای زمینه */
-    background-image: url(../img/repeated-square.png);
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;  
+
+    background-image: url(../img/psychedelic-paper-shapes-with-copy-space3000.jpg);
+    background-size: cover;
 }
 .container {
     /* میخواستم عرض کانتینرم 90% صفحه باشه */
@@ -24,7 +25,7 @@ body {
 /* ویدس فرمم 350 پیکسل بیشتر نیاز نبود  */
     width: 350px;
 /* بکگراند فرمم سفید گذاشتم ک با رنگ بادی خودشو بیشتر نشون بده */
-    background-color: #ffffff;
+    background-color: rgba(255, 255, 255, 0.4);
     
 /* فونت سایز 1.5 رم انتخاب کردم ک هرچی فونت سایز بادی بود 1.5 برابر بیشتر باشه */
     font-size: 1.5rem;
@@ -41,8 +42,8 @@ body {
     margin: auto;
     /* بوردر ردیوس 40پیکسل دادم ک اطراف فرمم انحنا داشته باشه */
     border-radius: 40px;
-    /* بوردر فرم دادم 8پیکسل برای ضخامت و مدل سالید و رنگ سبز  */
-    border: 8px rgb(103, 250, 59) solid;
+/* ی بورد دو پیکسلی سفید با درجه روشنی دو دهم دادم ک شبیه شیشه بشه کناره هاش فرمم  */
+    border: 2px rgba(255, 255, 255, 0.2) solid;
     
 }
 
@@ -61,32 +62,32 @@ body {
     /* متن داخل اینپوت رو وسط چین گذاشتم حس کردم قشنگ تره */
     text-align: center;
     background-color: rgb(255, 255, 255);
-    border: 2px rgb(170, 243, 136) solid;
+    border: 2px rgba(255, 255, 255, 0.1) solid;
 }
 
 .margin {
     /* مارجین تاپ برای فاصله المنت از المنت بالاییش گذاشتم ک فاصله داشته باشن */
     margin-top: 20px;
 }
-.btn_green {
+.btn_blue {
     /* برای اومدن علامت دست رو دکمه  */
     cursor:pointer;
-    background-color: rgb(13, 199, 13);
-    color: rgb(255, 255, 255);
+    background-color:#3742fa;
+    color:rgb(255, 255, 255);
     border-radius: 25px;
     font-size: 25px;
-    padding: 8px;
-    border: 1px rgb(38, 212, 14) solid;
+    padding: 6px;
+    border: 2px rgba(255, 255, 255, 0.2) solid;
 }
 
 .form a {
     /* لینک رو اندرلاینش رو حذف کردم چون تو پیش فرض استایلش بود و رنگشم اب روشن تر گذاشتم */
     text-decoration: none;
-    color: rgb(44, 44, 216);
+    color:rgb(33, 0, 223);
 }
 /* کلاس هدر درست کردم برای سایز و رنگ کاستوم  */
 .header {
-    color:rgb(42, 231, 42);
+    color:rgb(33, 0, 223);
     font-size: 40px;
     
 }
