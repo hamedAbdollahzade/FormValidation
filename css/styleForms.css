@@ -1,31 +1,35 @@
 *{
+    
     /* اینجا به کل المنت های صفحه برای اضافه نشدن به سایز باکس هام بخاطر پدینگ و مارجین روی حالت بوردر باکس میذارم  */
     box-sizing: border-box;
+    padding: 0;
+    margin: 0;
 }
 
 body { 
     /* ی فونت برای بادی انتخاب کردم ک بقیه ازش ارث ببرن و اگه سیستمی اون فونت رو نداشته باشه از پیش فرض های بعدی استفاده کنه   */
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;  
 
-    background-image: url(../img/psychedelic-paper-shapes-with-copy-space3000.jpg);
-    background-size: cover;
+    background-image: url(../img/green-leaf-texture-leaf-texture-background.jpg);
+    background-size:cover ;
+    background-repeat: no-repeat;
+    min-height: 100vh;
 }
 .container {
     /* میخواستم عرض کانتینرم 90% صفحه باشه */
     width: 90%;
     /* background-color: red; */
     /* مارجین چپ و راست اتو دادم ک مثل بازوی اهرم از کنار هل بدن بیان وسط */
-    margin-left: auto;
-    margin-right: auto;
+    margin: 10px auto;
     /* مارجین تاپ دادم ک از بالای صفحه فاصله داشته باشه */
-    margin-top: 10px;
+    /* margin-top: 10px; */
 }
 
 .form {
-/* ویدس فرمم 350 پیکسل بیشتر نیاز نبود  */
-    width: 350px;
+/* ویدس فرمم 400 پیکسل بیشتر نیاز نبود  */
+    width: 380px;
 /* بکگراند فرمم سفید گذاشتم ک با رنگ بادی خودشو بیشتر نشون بده */
-    background-color: rgba(255, 255, 255, 0.4);
+    background-color: rgba(255, 255, 255, 0.8);
     
 /* فونت سایز 1.5 رم انتخاب کردم ک هرچی فونت سایز بادی بود 1.5 برابر بیشتر باشه */
     font-size: 1.5rem;
@@ -37,7 +41,7 @@ body {
     /* تکس الاین رو سنتر گذاشتم چون جهت اصلی صفحه راست ب چپ و من اینجا میخوام تکس هام وسط چین باشن */
     text-align: center;
 /* پدینگ 40پیکسل گذاشتم ک محتوای فرمم از اطراف فاصله بگیرن و چون دسیپلی فلکس هست فلکس شیرینک المنت ها کار میکنه و ب نسبت هم همه رو یکسان عرضشون رو کم میکنه */
-    padding: 40px;
+    padding: 20px;
     /* مارجین اتو دادم ک نسبت به کانتینر بیاد وسط */
     margin: auto;
     /* بوردر ردیوس 40پیکسل دادم ک اطراف فرمم انحنا داشته باشه */
@@ -61,13 +65,13 @@ body {
     border-radius: 40px;
     /* متن داخل اینپوت رو وسط چین گذاشتم حس کردم قشنگ تره */
     text-align: center;
-    background-color: rgb(255, 255, 255);
+    background-color: rgba(255, 255, 255,0.6);
     border: 2px rgba(255, 255, 255, 0.1) solid;
 }
 
 .margin {
     /* مارجین تاپ برای فاصله المنت از المنت بالاییش گذاشتم ک فاصله داشته باشن */
-    margin-top: 20px;
+    margin-top: 10px;
 }
 .btn_blue {
     /* برای اومدن علامت دست رو دکمه  */
@@ -77,7 +81,7 @@ body {
     border-radius: 25px;
     font-size: 25px;
     padding: 6px;
-    border: 2px rgba(255, 255, 255, 0.2) solid;
+    border: 1px rgba(255, 255, 255, 0.2) solid;
 }
 
 .form a {
@@ -95,5 +99,5 @@ body {
 .alert-red {
     padding-top: 10px;
     font-size: 13px;
-    color: red;
+    color: rgba(255, 10, 10, 0.8)
 }
